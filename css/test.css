@@ -1,0 +1,143 @@
+h1 {
+  color: blanchedalmond;
+}
+
+nav ul li a {
+  color: aqua;
+}
+
+div {
+  display: flex;
+  color: bisque;
+}
+
+div {
+  color: red;
+  font-size: 20px;
+}
+
+circle {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  color: red;
+}
+
+rect {
+  width: 20rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.rectangle {
+  height: 5rem;
+  width: 10rem;
+}
+
+.col-1 {
+  width: 8.3333333333;
+}
+
+.col-2 {
+  width: 16.6666666667;
+}
+
+.col-3 {
+  width: 25;
+}
+
+.col-4 {
+  width: 33.3333333333;
+}
+
+.col-5 {
+  width: 41.6666666667;
+}
+
+.col-6 {
+  width: 50;
+}
+
+.col-7 {
+  width: 58.3333333333;
+}
+
+.col-8 {
+  width: 66.6666666667;
+}
+
+.col-9 {
+  width: 75;
+}
+
+.col-10 {
+  width: 83.3333333333;
+}
+
+.col-11 {
+  width: 91.6666666667;
+}
+
+.col-12 {
+  width: 100;
+}
+
+.class-1 {
+  font-size: 6rem;
+}
+
+.class-2 {
+  font-size: 7rem;
+}
+
+.class-3 {
+  font-size: 8rem;
+}
+
+.class-4 {
+  font-size: 9rem;
+}
+
+.class-5 {
+  font-size: 10rem;
+}
+
+.class-6 {
+  font-size: 11rem;
+}
+
+.class-7 {
+  font-size: 12rem;
+}
+
+.class-8 {
+  font-size: 13rem;
+}
+
+.btn-blue {
+  color: blue;
+  padding: 1rem;
+  border: 1px solid blue;
+}
+
+.btn-green {
+  color: green;
+  padding: 1rem;
+  border: 1px solid green;
+}
+
+.btn-black {
+  color: black;
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.theme-name {
+  background-color: black;
+  color: white;
+}
+
+.theme-name {
+  background-color: aqua;
+  color: gray;
+}/*# sourceMappingURL=test.css.map */

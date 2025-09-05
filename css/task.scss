@@ -1,0 +1,82 @@
+ul{
+    li{
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+
+// ------------------------------------btns
+
+$themes : blue , yellow, green, magenta;
+@each $theme in $themes {
+    .btn-#{$theme}{ 
+        color: $theme;
+        padding: 1rem;
+        border-radius: 1.2rem;
+        border: 1px solid $theme;
+        &:hover{
+            background-color: $theme;
+            color:white
+        }
+    }
+
+}
+// -------------------------------bg
+
+$thems : ("nav": blue , "body" : gray);
+@each $name , $theme-color in $thems{
+    .theme-#{$name}{
+    background-color : $theme-color;
+    @if $name == "nav" {
+        color: white;
+    } @else {
+        color : black;
+    
+    }
+}}
+// -----------------------------------mixin
+@mixin base($ju, $f, $g){
+    justify-content: $ju;
+    display: $f;
+gap: $g;
+}
+
+.nav{
+    align-items: center;
+    @include base(space-around,flex ,1rem );
+   
+}
+.cards{
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+@include base(center,flex ,5rem )
+}
+
+ul{
+        
+@include base(center,flex ,1rem );
+    list-style:none ;
+
+}
+
+// -----------------------------cols
+$cols:12;
+@for $i from 1 through $cols {
+    .col-#{$i}{
+        width: ($i /$cols) *100rem ;
+    }
+    $i :$i +1
+}
+
+.card{
+    padding: 1rem;
+    margin-top: 1rem;
+    box-shadow: 1px 1px 5rem rgb(184, 182, 182);
+    &:hover{
+    box-shadow: 1px 1px 5rem rgb(141, 106, 106);
+    }
+}

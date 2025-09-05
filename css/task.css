@@ -1,0 +1,138 @@
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-blue {
+  color: blue;
+  padding: 1rem;
+  border-radius: 1.2rem;
+  border: 1px solid blue;
+}
+.btn-blue:hover {
+  background-color: blue;
+  color: white;
+}
+
+.btn-yellow {
+  color: yellow;
+  padding: 1rem;
+  border-radius: 1.2rem;
+  border: 1px solid yellow;
+}
+.btn-yellow:hover {
+  background-color: yellow;
+  color: white;
+}
+
+.btn-green {
+  color: green;
+  padding: 1rem;
+  border-radius: 1.2rem;
+  border: 1px solid green;
+}
+.btn-green:hover {
+  background-color: green;
+  color: white;
+}
+
+.btn-magenta {
+  color: magenta;
+  padding: 1rem;
+  border-radius: 1.2rem;
+  border: 1px solid magenta;
+}
+.btn-magenta:hover {
+  background-color: magenta;
+  color: white;
+}
+
+.theme-nav {
+  background-color: blue;
+  color: white;
+}
+
+.theme-body {
+  background-color: gray;
+  color: black;
+}
+
+.nav {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  gap: 1rem;
+}
+
+.cards {
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 5rem;
+}
+
+ul {
+  justify-content: center;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.col-1 {
+  width: 8.3333333333rem;
+}
+
+.col-2 {
+  width: 16.6666666667rem;
+}
+
+.col-3 {
+  width: 25rem;
+}
+
+.col-4 {
+  width: 33.3333333333rem;
+}
+
+.col-5 {
+  width: 41.6666666667rem;
+}
+
+.col-6 {
+  width: 50rem;
+}
+
+.col-7 {
+  width: 58.3333333333rem;
+}
+
+.col-8 {
+  width: 66.6666666667rem;
+}
+
+.col-9 {
+  width: 75rem;
+}
+
+.col-10 {
+  width: 83.3333333333rem;
+}
+
+.col-11 {
+  width: 91.6666666667rem;
+}
+
+.col-12 {
+  width: 100rem;
+}
+
+.card {
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: 1px 1px 5rem rgb(184, 182, 182);
+}
+.card:hover {
+  box-shadow: 1px 1px 5rem rgb(141, 106, 106);
+}/*# sourceMappingURL=task.css.map */

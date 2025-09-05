@@ -1,0 +1,96 @@
+h1{
+    color:blanchedalmond
+}
+@import './variables';
+
+// ---------------nesting
+nav{
+    ul{
+        li{
+            a{
+color: aqua;
+            }
+        }
+    }
+}
+// ----------place holder and extend
+
+%main {
+display: flex;
+color: bisque;
+}
+div{
+    @extend %main;
+    color: $primary_color;
+    font-size: $text-size;
+}
+
+// ---------------------mixin and include
+
+@mixin shap($w, $h, $b){
+    width: $w;
+    height: $h;
+    border-radius: $b;
+}
+circle{
+    @include shap(20rem,20rem ,50% );
+ color: $primary-color;
+}
+rect{
+    @include shap(20rem,5rem ,50% ); 
+}
+// ---------------------function return value not style
+
+@function dublicate($w){
+    @return $w *2;
+}
+
+$height: 5rem;
+.rectangle{
+    height : $height;
+    width : dublicate($height);
+}
+
+// loop
+// -----------------------------for
+$cols:12;
+@for $i from 1 through $cols {
+    .col-#{$i}{
+        width: ($i /$cols) *100 ;
+    }
+    $i :$i +1
+}
+
+// -----------------------while
+@function f-size($a){
+    @return $a + 5rem;
+}
+$x :1;
+@while $x <=8{
+    .class-#{$x}{
+        font-size: f-size($x);
+    }
+    $x : $x +1
+}
+// ----------------------map each
+$themes : blue ,green , black;
+@each $theme in $themes {
+    .btn-#{$theme}{ 
+        color: $theme;
+        padding: 1rem;
+        border: 1px solid $theme;
+    }
+}
+// --------arr
+
+$thems : ("dark": black , "light" : aqua);
+@each $name , $theme-color in $thems{
+    .theme-#{name}{
+    background-color : $theme-color;
+    @if $name == "dark" {
+        color: white;
+    } @else {
+        color : gray;
+    
+    }
+}}
